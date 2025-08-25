@@ -6,5 +6,17 @@
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": "images/hello_extensions.png"
-  }
+  },
+  "icons": {
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
 }
+
